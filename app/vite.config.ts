@@ -1,16 +1,10 @@
 import { defineConfig, type UserConfig } from "vite";
-import {
-	qwikVite as qwik,
-	type QwikVitePluginOptions,
-} from "@qwik.dev/core/optimizer";
+import { qwikVite as qwik } from "@qwik.dev/core/optimizer";
 import { nitro } from "nitro/vite";
-
-const entryConfig: QwikVitePluginOptions = {
-	devSsrServer: false,
-};
+import { qwikEntryConfig } from "qwik-start";
 
 export default defineConfig((): UserConfig => {
 	return {
-		plugins: [qwik(entryConfig), nitro()],
+		plugins: [qwik(qwikEntryConfig), nitro()],
 	};
 });

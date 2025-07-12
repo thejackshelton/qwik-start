@@ -16,6 +16,7 @@
 	},
 	"devDependencies": {
 		"@qwik.dev/core": "2.0.0-beta.5",
+		"qwik-start": "workspace:*",
 		"vite": "7.0.4",
 		"nitro": "npm:nitro-nightly@latest"
 	}

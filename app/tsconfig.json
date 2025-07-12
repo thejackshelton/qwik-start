@@ -1,23 +1,10 @@
 {
+	"extends": "../tsconfig.base.json",
 	"compilerOptions": {
-		"allowJs": true,
-		"target": "ES2017",
-		"module": "ES2022",
-		"lib": ["es2022", "DOM", "WebWorker", "DOM.Iterable"],
-		"jsx": "react-jsx",
-		"jsxImportSource": "@qwik.dev/core",
-		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"resolveJsonModule": true,
-		"moduleResolution": "Bundler",
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"incremental": true,
-		"isolatedModules": true,
-		"outDir": "tmp",
-		"noEmit": true,
 		"paths": {
-			"~/*": ["./src/*"]
+			"~/*": ["./src/*"],
+			"qwik-start": ["../core/src/index.ts"],
+			"qwik-start/*": ["../core/src/*"]
 		}
 	},
 	"include": ["src", "pages", "./*.d.ts", "./*.config.ts"]

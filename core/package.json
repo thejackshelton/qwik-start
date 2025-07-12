@@ -17,6 +17,7 @@
 		"dev": "tsdown --watch"
 	},
 	"devDependencies": {
-		"tsdown": "latest"
+		"tsdown": "latest",
+		"@qwik.dev/core": "2.0.0-beta.5"
 	}
 }

@@ -16,12 +16,18 @@ importers:
       nitro:
         specifier: npm:nitro-nightly@latest
         version: nitro-nightly@3.0.0-20250712-122833.ac50c28c(vite@7.0.4(@types/node@24.0.13)(jiti@2.4.2)(terser@5.43.1))
+      qwik-start:
+        specifier: workspace:*
+        version: link:../core
       vite:
         specifier: 7.0.4
         version: 7.0.4(@types/node@24.0.13)(jiti@2.4.2)(terser@5.43.1)
 
   core:
     devDependencies:
+      '@qwik.dev/core':
+        specifier: 2.0.0-beta.5
+        version: 2.0.0-beta.5(prettier@3.3.3)(vite@7.0.4(@types/node@24.0.13)(jiti@2.4.2)(terser@5.43.1))
       tsdown:
         specifier: latest
         version: 0.12.9

@@ -1,3 +1,5 @@
 packages:
- - app
- - core
+  - app
+  - core
+onlyBuiltDependencies:
+  - '@parcel/watcher'

@@ -9,7 +9,7 @@ We leverage Nitro and H3 to focus on improving Qwik Start without needing to mai
 - **Composable Architecture**: Easily combine multiple tools, frameworks, or services.
 - **Qwik Integration**: Seamless support for Qwik core.
 - **Vite-Powered**: Lightning-fast development server and optimized builds.
-- **H3 and Nitro**: Robust server-side handling with support for SSR, API routes, and more.
+- **H3 & Nitro Integration**: Out-of-the-box support for modern server APIs, middleware, and deployment flexibility.
 - **Monorepo Setup**: Organized with `app/` for consumer facing side and `core/` where the main logic for Qwik Start is located.
 
 ## Project Structure

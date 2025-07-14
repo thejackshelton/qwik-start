@@ -1,14 +1,16 @@
 # Qwik Start
 
-Qwik Start is a composable meta-framework designed for building modern web applications. It is built on top of Vite for fast development and building, H3 for lightweight HTTP handling, and Nitro for powerful server-side rendering and API capabilities. Leveraging Qwik's resumability, it enables efficient, scalable full-stack development in a monorepo structure.
+Qwik Start is a composable meta-framework designed for building modern web applications, with support for Qwik core. It is built on top of Vite for fast development and building.
+
+We leverage Nitro and H3 to focus on improving Qwik Start without needing to maintain deployment providers, runtimes, and storage providers. Qwik Start's main focus is on routing, middleware, data fetching, server functions, and more.
 
 ## Features
 
-- **Composable Architecture**: Easily mount nested apps and combine multiple frameworks or services.
-- **Qwik Integration**: Resumable components for optimal performance and hydration.
+- **Composable Architecture**: Easily combine multiple tools, frameworks, or services.
+- **Qwik Integration**: Seamless support for Qwik core.
 - **Vite-Powered**: Lightning-fast development server and optimized builds.
 - **H3 and Nitro**: Robust server-side handling with support for SSR, API routes, and more.
-- **Monorepo Setup**: Organized with `app/` for the frontend application and `core/` for framework essentials.
+- **Monorepo Setup**: Organized with `app/` for consumer facing side and `core/` where the main logic for Qwik Start is located.
 
 ## Project Structure
 
@@ -33,25 +35,17 @@ Qwik Start is a composable meta-framework designed for building modern web appli
 
 ### Development
 
-To start the development server for the app:
-
 ```
 pnpm --filter app dev
 ```
 
-This runs Vite in SSR mode for the Qwik application.
-
 ### Building
-
-To build the application:
 
 ```
 pnpm --filter app build
 ```
 
 ### Preview
-
-To preview the built application:
 
 ```
 pnpm --filter app preview

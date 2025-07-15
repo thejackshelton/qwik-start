@@ -8,11 +8,11 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "qwik build",
+		"build": "nitro build && qwik build",
 		"build.client": "vite build",
 		"build.preview": "vite build --ssr src/entry.preview.tsx",
 		"build.types": "tsc --incremental --noEmit",
-		"dev": "vite dev"
+		"dev": "vite --mode ssr"
 	},
 	"devDependencies": {
 		"@qwik.dev/core": "2.0.0-beta.5",

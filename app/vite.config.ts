@@ -5,6 +5,6 @@ import { qwikEntryConfig } from "qwik-start";
 
 export default defineConfig((): UserConfig => {
 	return {
-		plugins: [qwik(qwikEntryConfig), nitro()],
+		plugins: [nitro()],
 	};
 });

@@ -1,29 +1,26 @@
-import { H3, defineHandler } from "h3";
 import { renderToStream } from "@qwik.dev/core/server";
 import { Counter } from "./src/components/counter";
 import { manifest } from "@qwik-client-manifest";
 
-const app = new H3();
+export default {
+	async fetch(req: Request) {
+		let html = "";
 
-const handler = defineHandler(async () => {
-	let html = "";
-
-	await renderToStream(<Counter />, {
-		manifest,
-		containerTagName: "div",
-		stream: {
-			write: (chunk: string) => {
-				console.log("Chunk: ", chunk);
-				html += chunk;
+		await renderToStream(<Counter />, {
+			manifest,
+			containerTagName: "div",
+			stream: {
+				write: (chunk: string) => {
+					console.log("Chunk: ", chunk);
+					html += chunk;
+				},
 			},
-		},
-	});
+		});
 
-	console.log("HTML: ", html);
-
-	return html;
-});
-
-export default handler;
-
-app.get("/", handler);
+		return new Response(html, {
+			headers: {
+				"content-type": "text/html",
+			},
+		});
+	},
+};

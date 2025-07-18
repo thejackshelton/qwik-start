@@ -5,7 +5,7 @@ import { nitro } from "nitro/vite";
 export default defineConfig((): UserConfig => {
 	return {
 		plugins: [
-			nitro(),
+			nitro({}),
 			qwik({
 				devSsrServer: false,
 			}),

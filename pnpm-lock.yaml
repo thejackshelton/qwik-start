@@ -13,6 +13,9 @@ importers:
       '@qwik.dev/core':
         specifier: 2.0.0-beta.5
         version: 2.0.0-beta.5(prettier@3.3.3)(vite@7.0.4(@types/node@24.0.13)(jiti@2.4.2)(terser@5.43.1))
+      h3:
+        specifier: 2.0.0-beta.1
+        version: 2.0.0-beta.1(crossws@0.4.1(srvx@0.8.2))
       nitro:
         specifier: npm:nitro-nightly@latest
         version: nitro-nightly@3.0.0-20250714-160350.65b58f06(vite@7.0.4(@types/node@24.0.13)(jiti@2.4.2)(terser@5.43.1))

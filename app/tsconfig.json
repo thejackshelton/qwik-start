@@ -7,5 +7,5 @@
 			"qwik-start/*": ["../core/src/*"]
 		}
 	},
-	"include": ["src", "pages", "./*.d.ts", "./*.config.ts"]
+	"include": ["src", "pages", "./*.d.ts", "./*.config.ts", "server.tsx"]
 }

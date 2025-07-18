@@ -5,10 +5,10 @@ import { manifest } from "@qwik-client-manifest";
 
 const app = new H3();
 
-const handler = defineHandler(() => {
+const handler = defineHandler(async () => {
 	let html = "";
 
-	renderToStream(<Counter />, {
+	await renderToStream(<Counter />, {
 		manifest,
 		containerTagName: "div",
 		stream: {

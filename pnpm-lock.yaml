@@ -11,8 +11,8 @@ importers:
   app:
     devDependencies:
       '@qwik.dev/core':
-        specifier: 2.0.0-beta.5
-        version: 2.0.0-beta.5(prettier@3.3.3)(vite@7.0.4(@types/node@24.0.13)(jiti@2.4.2)(terser@5.43.1))
+        specifier: https://pkg.pr.new/QwikDev/qwik/@qwik.dev/core@299a865
+        version: https://pkg.pr.new/QwikDev/qwik/@qwik.dev/core@299a865(prettier@3.3.3)(vite@7.0.4(@types/node@24.0.13)(jiti@2.4.2)(terser@5.43.1))
       h3:
         specifier: 2.0.0-beta.1
         version: 2.0.0-beta.1(crossws@0.4.1(srvx@0.8.2))
@@ -393,6 +393,21 @@ packages:
 
   '@qwik.dev/core@2.0.0-beta.5':
     resolution: {integrity: sha512-Q2dTdlyevyR5l7Hhj5739/6loC/DHIBdsJEU66p1PsnVNFMmOtrcBGyokl/gIaTzsXGuY2Xq3MSpkDI+gKt/RA==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    hasBin: true
+    peerDependencies:
+      prettier: '*'
+      vite: '>=5 <8'
+      vitest: '>=2 <3'
+    peerDependenciesMeta:
+      prettier:
+        optional: true
+      vitest:
+        optional: true
+
+  '@qwik.dev/core@https://pkg.pr.new/QwikDev/qwik/@qwik.dev/core@299a865':
+    resolution: {tarball: https://pkg.pr.new/QwikDev/qwik/@qwik.dev/core@299a865}
+    version: 2.0.0-beta.6
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     hasBin: true
     peerDependencies:
@@ -2177,6 +2192,14 @@ snapshots:
       quansync: 0.2.10
 
   '@qwik.dev/core@2.0.0-beta.5(prettier@3.3.3)(vite@7.0.4(@types/node@24.0.13)(jiti@2.4.2)(terser@5.43.1))':
+    dependencies:
+      csstype: 3.1.3
+      rollup: 4.45.0
+      vite: 7.0.4(@types/node@24.0.13)(jiti@2.4.2)(terser@5.43.1)
+    optionalDependencies:
+      prettier: 3.3.3
+
+  '@qwik.dev/core@https://pkg.pr.new/QwikDev/qwik/@qwik.dev/core@299a865(prettier@3.3.3)(vite@7.0.4(@types/node@24.0.13)(jiti@2.4.2)(terser@5.43.1))':
     dependencies:
       csstype: 3.1.3
       rollup: 4.45.0

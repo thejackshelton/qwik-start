@@ -25,6 +25,9 @@ importers:
       qwik-start:
         specifier: workspace:*
         version: link:../core
+      typescript:
+        specifier: ^5.4.5
+        version: 5.8.3
       unstorage:
         specifier: ^1.16.0
         version: 1.16.1(db0@0.3.2)(ioredis@5.6.1)
@@ -42,7 +45,7 @@ importers:
         version: 2.0.0-beta.1(crossws@0.4.1(srvx@0.8.2))
       tsdown:
         specifier: latest
-        version: 0.12.9
+        version: 0.12.9(typescript@5.8.3)
 
 packages:
 
@@ -1713,6 +1716,11 @@ packages:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
 
+  typescript@5.8.3:
+    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   ufo@1.6.1:
     resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
 
@@ -3219,7 +3227,7 @@ snapshots:
 
   reusify@1.1.0: {}
 
-  rolldown-plugin-dts@0.13.13(rolldown@1.0.0-beta.26):
+  rolldown-plugin-dts@0.13.13(rolldown@1.0.0-beta.26)(typescript@5.8.3):
     dependencies:
       '@babel/generator': 7.28.0
       '@babel/parser': 7.28.0
@@ -3230,6 +3238,8 @@ snapshots:
       dts-resolver: 2.1.1
       get-tsconfig: 4.10.1
       rolldown: 1.0.0-beta.26
+    optionalDependencies:
+      typescript: 5.8.3
     transitivePeerDependencies:
       - oxc-resolver
       - supports-color
@@ -3436,7 +3446,7 @@ snapshots:
 
   tr46@0.0.3: {}
 
-  tsdown@0.12.9:
+  tsdown@0.12.9(typescript@5.8.3):
     dependencies:
       ansis: 4.1.0
       cac: 6.7.14
@@ -3446,11 +3456,13 @@ snapshots:
       empathic: 2.0.0
       hookable: 5.5.3
       rolldown: 1.0.0-beta.26
-      rolldown-plugin-dts: 0.13.13(rolldown@1.0.0-beta.26)
+      rolldown-plugin-dts: 0.13.13(rolldown@1.0.0-beta.26)(typescript@5.8.3)
       semver: 7.7.2
       tinyexec: 1.0.1
       tinyglobby: 0.2.14
       unconfig: 7.3.2
+    optionalDependencies:
+      typescript: 5.8.3
     transitivePeerDependencies:
       - '@typescript/native-preview'
       - oxc-resolver
@@ -3461,6 +3473,8 @@ snapshots:
     optional: true
 
   type-fest@4.41.0: {}
+
+  typescript@5.8.3: {}
 
   ufo@1.6.1: {}
 
